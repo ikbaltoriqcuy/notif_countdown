@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <!-- Image Icon -->
+    <ImageView
+        android:id="@+id/notification_image"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/ic_launcher" />
+
+    <!-- Notification Title -->
+    <TextView
+        android:id="@+id/notification_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/notification_image"
+        android:layout_marginStart="8dp"
+        android:text="Spike Event Countdown"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:maxLines="1"
+        android:ellipsize="end" />
+
+    <!-- Notification Description -->
+    <TextView
+        android:id="@+id/notification_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification_title"
+        android:layout_toEndOf="@id/notification_image"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Don't miss out!"
+        android:textSize="14sp"
+        android:textColor="@color/black" />
+
+    <!-- Countdown Text -->
+    <TextView
+        android:id="@+id/notification_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/notification_description"
+        android:layout_toEndOf="@id/notification_image"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="Starts in 10 seconds"
+        android:textSize="14sp"
+        android:textColor="@color/black" />
+
+</RelativeLayout>
